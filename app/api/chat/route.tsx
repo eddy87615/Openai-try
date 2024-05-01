@@ -12,7 +12,7 @@ export async function POST(req: Request, res: Response) {
   console.log('messages:', messages);
 
   const response = await openai.chat.completions.create({
-    model: 'dall-e-2',
+    model: 'tts-1',
     messages: [
       {
         role: 'system',
